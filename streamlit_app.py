@@ -7,6 +7,8 @@ subprocess.run(["curl", "http://files.grouplens.org/datasets/movielens/ml-latest
 import zipfile
 with zipfile.ZipFile('ml-latest-small.zip', 'r') as zip_ref:
     zip_ref.extractall('data')
+    
+pip install scikit-surprise
 
 import pandas as pd
 import numpy as np
