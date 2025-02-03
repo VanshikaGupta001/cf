@@ -1,4 +1,8 @@
-curl http://files.grouplens.org/datasets/movielens/ml-latest-small.zip -o ml-latest-small.zip
+import subprocess
+
+# Run the curl command
+subprocess.run(["curl", "http://files.grouplens.org/datasets/movielens/ml-latest-small.zip", "-o", "ml-latest-small.zip"])
+
 
 import zipfile
 with zipfile.ZipFile('ml-latest-small.zip', 'r') as zip_ref:
