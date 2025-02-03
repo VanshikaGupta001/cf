@@ -58,7 +58,7 @@ def get_recommendations(user_id, n=5):
     
     return recommended_movies
 
-!pip install streamlit
+
 
 import streamlit as st
 import pandas as pd
